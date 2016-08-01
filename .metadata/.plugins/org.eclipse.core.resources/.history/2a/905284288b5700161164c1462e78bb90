@@ -1,0 +1,22 @@
+package arrays;
+
+public class Inserting {
+	public static int[] insertAt(int[] before, int index, int value) {
+		int[] after = new int[before.length + 1];
+		
+		for(int i = 0; i < after.length; i++) {
+			if(i < index) {
+				after[i] = before[i];
+			}
+			
+			else if(i == index) {
+				after[i] = value;
+			}
+			
+			else if(i > index) {
+				after[i] = before[i-1];
+			}
+		}
+		return after;
+	}
+}
