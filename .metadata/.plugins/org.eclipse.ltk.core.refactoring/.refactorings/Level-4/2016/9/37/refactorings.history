@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;uml.Hospital&apos; to &apos;HospitalTest&apos;&#x0A;- Original project: &apos;Level-4&apos;&#x0A;- Original element: &apos;uml.Hospital&apos;&#x0A;- Renamed element: &apos;uml.HospitalTest&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Hospital&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;uml{Hospital.java[Hospital" matchStrategy="1" name="HospitalTest" qualified="false" references="true" similarDeclarations="false" stamp="1473038974720" textual="false" version="1.0"/>
+</session>
