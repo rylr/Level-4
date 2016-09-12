@@ -1,0 +1,7 @@
+package uml;
+
+public class DoctorFullException extends Exception {
+	DoctorFullException(String s) {
+		super(s);
+	}
+}
