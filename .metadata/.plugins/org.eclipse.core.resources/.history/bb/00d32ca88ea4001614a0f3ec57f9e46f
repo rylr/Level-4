@@ -1,0 +1,19 @@
+package threads;
+
+public class Test {
+	public static void main(String[] args) {
+		new Thread(() -> { 
+			for(int i = 0; i <= 10; i++) {
+				System.out.println(i + " loops");
+			}
+		}).start();
+		
+		new Thread(() -> { 
+			for(int i = 11; i <= 20; i++) {
+				System.out.println(i + " loops");
+			}
+		}).start();
+		
+		System.out.println("End of class");
+	}
+}

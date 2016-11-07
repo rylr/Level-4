@@ -1,0 +1,35 @@
+package threads;
+
+public class Test {
+	public static void main(String[] args) {
+		int[] primes = new int[1000];
+		
+		
+		new Thread(() -> { 
+			boolean running = true;
+			int count = 0;
+			int num = 1;
+			while(running) {
+				if(isPrime(num)) {
+					primes[count] = num;
+					count++;
+				}
+				num++;
+				
+				if(count == 999)
+					running = false;
+			}
+		}).start();
+		
+		for(int i : primes)
+			System.out.println(i);
+			
+	}
+	
+	static boolean isPrime(int num) {
+		for(int i = 2; i < num; i++)
+			if(num % i == 0)
+				return false;
+		return true;
+	}
+}
